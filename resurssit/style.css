@@ -62,3 +62,16 @@ font-size: 2rem;
     font-size: 1.5rem;
     
 }
+
+
+/*Services box*/
+.servicesbox {
+    display: none;
+
+    background-color: brown;
+    margin-top: 1rem;
+    height: 300px;
+    width: 90%;
+    z-index: 2;
+    margin: auto;
+}
