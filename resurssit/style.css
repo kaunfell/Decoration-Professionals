@@ -1,0 +1,28 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    height: 100%;
+}
+
+main {
+    background-color: gray;
+
+}
+
+.maincontainer {
+   width: auto;
+}
+
+.mainpicture {
+width: 100%;
+
+}
+
+.mainpicture img {
+    width: 100%;
+    display: block;
+
+}
+
