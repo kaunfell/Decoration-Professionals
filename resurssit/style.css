@@ -26,3 +26,39 @@ width: 100%;
 
 }
 
+
+/*Sidenav*/
+.sidenav {
+    height: 100%;
+    width: 0; /* tämä sai navin pysymään näkymättömänä sivulle tultaessa*/
+    overflow-x: hidden;
+    z-index: 1;
+    position: fixed;
+    background-color: black;
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+.sidenav a {
+    color:cornflowerblue;
+    display: block;
+
+    font-size: 1.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+
+.sidenav .closebutton {
+position: absolute;
+top: 0rem;
+right: 0rem;
+padding-top: 0rem;
+font-size: 2rem;
+
+}
+
+.menu {
+    font-size: 1.5rem;
+    
+}
