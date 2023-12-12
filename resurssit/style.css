@@ -73,9 +73,9 @@ font-size: 2rem;
 .servicesbox {
     display: none;
     position: absolute;
-    background-color: rgba(20, 5, 5, 0.5);
+    background-color: rgba(26, 21, 21, 0.7);
     top: 20%;
-    margin: 9% 25%;
+    margin: 7% 22%;
     height: 450px;
     width: 60%;
     z-index: 2;
@@ -100,15 +100,7 @@ font-size: 2rem;
 
 }
 
-/*
-.projectscontainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: 2px solid blue;
-    width: 100%;
-    
-}
-*/
+/* Projects */
 .projectscontainer img {
     width: 100%;
     height: 1000px;
@@ -136,11 +128,86 @@ font-size: 2rem;
     padding-bottom: 250px;
     background-image:  url("kuvat/phil-5i0GnoTTjSE-unsplash.jpg");
     background-position: center;
+    background-size: cover;
 
 }
 
 .column:hover {
     opacity: 0.7;
     transition: 0.5s ease;
+}
+
+
+/*About us*/
+
+.aboutcontainer {
+text-align: center;
+padding: 5%;
+background-image: url("kuvat/table_hutomo-abrianto-.jpg");
+height: 800px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+background-color: aliceblue;
+
+}
+
+.aboutcontainer img {
+    margin-top: 50px;   
+
+}
+
+.aboutcontainer h2{
+    color: pink;
+    font-size: 3rem;
+
+    
+}
+
+.aboutcontainer p {
+font-size: 1.5rem;
+text-align: justify;
+
+}
+
+
+
+/*Contact*/
+.contactcontainer {
+    border: solid 2px brown;
+    padding: 20px;
+    text-align: center;
+    background-color: grey;
+}
+
+label, input{
+    display: block;
+    padding: 5px;
+}
+
+input[type=text],  select, textarea{
+    width: 200px;
+    padding: 12px 20px;
+    display: inline-block;
+}
+
+button {
+margin-top: 10px;
+}
+
+
+
+/* Footer */ 
+footer {
+    text-align: center;
+    background-color: gray;
+    margin: 0rem;
+
+}
+
+.footer li {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.3rem;
 
 }
