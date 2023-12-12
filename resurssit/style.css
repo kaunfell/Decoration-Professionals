@@ -41,7 +41,7 @@ width: 100%;
 }
 
 .sidenav a {
-    color:cornflowerblue;
+    color:rgb(120, 123, 129);
     display: block;
 
     font-size: 1.5rem;
@@ -61,4 +61,38 @@ font-size: 2rem;
 .menu {
     font-size: 1.5rem;
     
+}
+
+
+/*Services box*/
+.servicesbox {
+    display: none;
+    position: absolute;
+    background-color: rgba(20, 5, 5, 0.5);
+    top: 20%;
+    margin: 9% 25%;
+    height: 450px;
+    width: 60%;
+    z-index: 2;
+    border: 0.5rem black;
+    border-radius: 0.8rem;
+    box-shadow: 0.2rem 0.2rem rgb(0, 0, 0, 0.8);
+
+
+}
+
+.servicesbox h3 {
+    color:rgb(202, 202, 202) ;
+    font-size: 2rem;
+
+    margin: auto;
+}
+
+.closebutton2 {
+    color:rgb(44, 42, 42);
+    font-size: 2rem;
+    margin: 0.4rem;
+    
+
+
 }
