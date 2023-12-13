@@ -50,16 +50,16 @@
     <section id="projectscontainer" class=" projectscontainer">
 
       <div class="column">
-        <img src="resurssit/kuvat/changing_tu-tu-.jpg">
+        <img src="resurssit/kuvat/changing_tu-tu-.jpg"  onclick="zoomImg(this)">
       </div>
       <div class="column">
-        <img src="resurssit/kuvat/livingroom_sarah-khan-.jpg">
+        <img src="resurssit/kuvat/livingroom_sarah-khan-.jpg"  onclick="zoomImg(this)">
       </div>
       <div class="column">
-        <img src="resurssit/kuvat/bedroom_xie-yujie-nick-.jpg">
+        <img src="resurssit/kuvat/bedroom_xie-yujie-nick-.jpg"  onclick="zoomImg(this)">
       </div>
       <div class="column">
-        <img src="resurssit/kuvat/outside_sonnie-hiles-.jpg">
+        <img src="resurssit/kuvat/outside_sonnie-hiles-.jpg"  onclick="zoomImg(this)">
       </div>     
     </section>
 
@@ -99,16 +99,19 @@
       <form action="/action_page.php" method="get">
 
       <label for="firstname">First Name</label>
-      <input type="text" id="firstname" name="firstname" placeholder="First name">
+      <input type="text" id="firstname" name="firstname" placeholder="First name" required>
 
       <label for="lastname">Last Name</label>
-      <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+      <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+
+      <label for="number">Phone number</label>
+      <input type="tel" id="number" name="number" placeholder="Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
 
       <label for="email">Email</label>
-      <input type="text" id="email" name="email" placeholder="Email">
+      <input type="text" id="email" name="email" placeholder="Email" required>
 
       <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Write a message:"></textarea>
+      <textarea id="message" name="message" maxlength="300" placeholder="Write a message:"></textarea>
       <div>
         <button>Submit</button>
       </div>
