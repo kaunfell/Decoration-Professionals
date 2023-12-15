@@ -28,6 +28,8 @@ function closeServices()  {
 // Projectpictures, zoom
 function zoomImg(element) {
     element.classList.toggle('zoomed');
-    
 
 }
+
+
+
