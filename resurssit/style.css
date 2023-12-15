@@ -18,7 +18,7 @@ main {
 }
 
 .mainpicture {
-width: 100%;
+    width: 100%;
 
 }
 
@@ -53,11 +53,11 @@ width: 100%;
 
 
 .sidenav .closebutton {
-position: absolute;
-top: 0rem;
-right: 0rem;
-padding-top: 0rem;
-font-size: 2rem;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    padding-top: 0rem;
+    font-size: 2rem;
 
 }
 
@@ -67,12 +67,31 @@ font-size: 2rem;
     font-size: 1.5rem;
     padding: 0.4rem;
     position: fixed;
+}
+
+@media screen and (max-width: 1100px){
+    .sidenav {
+
+        width: 100%;
+        height: 5%;
+        overflow: hidden;
+        z-index: 3;
+    }
     
-    
+    .sidenav .closebutton {
+        display: none;
+    }
+
+    .sidenav a{
+        display: inline;
+        font-size: 1.3rem;
+        padding-bottom: 15%;
+    }
 }
 
 
 /*Services box*/
+
 .servicesbox {
     display: none;
     position: absolute;
@@ -100,17 +119,26 @@ font-size: 2rem;
     color:rgb(44, 42, 42);
     font-size: 2rem;
     margin: 0.4rem;
-
 }
 
+@media screen and (max-width: 1100px) {
+    .servicesbox {
+        display: none;
+        width: 50%;
+        height: 40%;
+        margin: 5% 25%;
+    }
 
+    .servicesbox h3 {
+        font-size: 1.3rem;
+    }
+}
 
 /* Projects */
 
-
 .projectscontainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
     height: auto;
     max-width: 100%;
@@ -120,25 +148,20 @@ font-size: 2rem;
     background-image:  url("kuvat/phil-5i0GnoTTjSE-unsplash.jpg");
     background-position: center;
     background-size: cover;
-
+    margin: auto;
 }
 
 .projectscontainer img {
-    
-
     max-width: 100%;
-    height: 500px;
+    height: 100%;
     display: block;
     border: 2px solid rgb(77, 77, 77, 0.5);
     border-radius: 0.3rem;
 
-
-  
 }
 
 .column {
     width: 100%;
-    margin: 10px;
     padding: 10px;
 
 }
@@ -146,35 +169,49 @@ font-size: 2rem;
 .column:hover {
     opacity: 0.8;
     transition: 0.5s ease;
-   transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 
 .zoomed {
-    border: 2px solid blue;
-    max-width:100%;
+
+    max-width:70%;
     height: 100%;
     transition: transform 0.3s ease;
     transform: scale(1.4, 1.57);
-    margin: 0% 5%;
-  }
+    margin: auto;
+    box-sizing: border-box;
 
+  }
+.zoomed+ {
+    border: solid red 2px;
+}
  
+
+@media screen and (max-width: 1355px) {
+    body .projectscontainer{
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-gap: 10px;
+    height: auto;
+
+    }
+}
+
+
 
 /*About us*/
 
 .aboutcontainer {
-text-align: center;
-padding: 20%;
-background-image: url("kuvat/table_hutomo-abrianto-.jpg");
-height: 800px;
-background-size:cover;
-
-margin: 3%;
-
-background-repeat: no-repeat;
-background-position: center;
-background-color: rgb(172, 175, 182);
+    text-align: center;
+    padding: 20%;
+    background-image: url("kuvat/table_hutomo-abrianto-.jpg");
+    height: 800px;
+    background-size:cover;
+    margin: 3%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(172, 175, 182);
 
 }
 
@@ -183,19 +220,31 @@ background-color: rgb(172, 175, 182);
 .aboutcontainer h2{
     color: rgb(148, 129, 132);
     font-size: 5rem;  
+    text-shadow: rgb(22, 22, 21) 1px 1px;
 }
 
 .aboutcontainer p {
-font-size: 1.5rem;
-text-align: justify;
-padding: 12%;
-background-color: rgba(162, 167, 167, 0.6);
-border-radius: 0.3rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 12%;
+    background-color: rgba(162, 167, 167, 0.6);
+    border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 900px) {
+    .aboutcontainer h2 {
+        font-size: 4rem;
+    }
+
+    .aboutcontainer p {
+        overflow-y: auto;
+    }
 }
 
 
 
 /*Contact*/
+
 .contactcontainer {
  
     padding: 20px;
@@ -216,12 +265,13 @@ input[type=text], input[type=tel],  select, textarea{
 }
 
 button {
-margin-top: 10px;
+    margin-top: 10px;
 }
 
 
 
 /* Footer */ 
+
 footer {
     text-align: center;
     background-color: rgb(167, 167, 167);
